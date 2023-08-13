@@ -1,2 +1,6 @@
-feh --bg-scale ~/src/background.jpg
-exec dbus-launch dwm
+~/.fehbg &
+pulseaudio --start
+
+while :; do
+	dbus-run-session dwm 
+done
